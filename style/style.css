@@ -1,0 +1,566 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* max-width: 700px; */
+}
+
+body {
+    /* background: #E5E5E5; */
+    font-family: 'AvenirNextCyr-Regular';
+
+}
+
+.link-menu {
+    margin-top: 32px;
+    /* margin-left: 375px; */
+    margin-left: calc(50% - 770px);
+    display: flex;
+    gap: 11.75px;
+}
+
+.link-menu a {
+    font-family: 'AvenirNextCyr-Regular';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 14px;
+    line-height: 150%;
+    color: #414140;
+}
+
+.current-link {
+    text-decoration: none;
+
+}
+
+.content {
+    margin-top: 32px;
+    margin-left: calc(50% - 770px);
+    display: flex;
+    /* justify-content: center; */
+    gap: 30px;
+}
+
+
+
+.left-content {
+    max-width: 770px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+
+.circle {
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+    background-color: #f4e001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    z-index: 13;
+    font-family: 'AvenirNextCyr-Regular';
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 150%;
+}
+
+.circle1 {
+    position: absolute;
+    top: 291px;
+    left: calc(50% - 409px);
+}
+
+
+.circle2 {
+    position: absolute;
+    top: 321px;
+    left: calc(50% - 770px + 510px);
+}
+
+.circle3 {
+    position: absolute;
+    top: 228px;
+    left: calc(50% - 770px + 250px);
+}
+
+.circle4 {
+    position: absolute;
+    top: 91px;
+    left: calc(50% - 770px + 110px);
+
+}
+
+.circle5 {
+    position: absolute;
+    left: calc(50% - 770px + 132px);
+    top: 221px;
+}
+
+.circle6 {
+    position: absolute;
+    left: calc(50% - 770px + 662px);
+    top: 259px;
+}
+
+.hint {
+    background: #414140;
+    padding: 12px 23px 14px 16px;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    opacity: 0;
+    transition: 0.3s ease;
+    color: #F5F7F9;
+}
+
+.hint span {
+    font-weight: 750;
+    color: #FFDA00;
+}
+
+.hint-1 {
+    position: absolute;
+    top: 311px;
+    left: calc(50% - 770px + 209px);
+
+}
+
+.hint-2 {
+    position: absolute;
+    top: 331px;
+    left: calc(50% - 770px + 510px);
+
+}
+
+.hint-3 {
+    position: absolute;
+    top: 248px;
+    left: calc(50% - 770px + 250px);
+}
+
+.hint-4 {
+    position: absolute;
+    top: 111px;
+    left: calc(50% - 770px + 110px);
+
+}
+
+.hint-5 {
+    position: absolute;
+    left: calc(50% - 770px + 132px);
+    top: 221px;
+}
+
+.hint-6 {
+    position: absolute;
+    top: 291px;
+    left: calc(50% - 770px + 662px);
+}
+
+
+/* всплывашки */
+
+.circle:hover {
+
+    background-color: #c7b600;
+}
+
+.circle1:hover~.hint-1 {
+    opacity: 0.85;
+
+}
+
+.circle2:hover~.hint-2 {
+    opacity: 0.85;
+
+}
+
+.circle3:hover~.hint-3 {
+    opacity: 0.85;
+
+}
+
+.circle4:hover~.hint-4 {
+    opacity: 0.85;
+
+}
+
+.circle5:hover~.hint-5 {
+    opacity: 0.85;
+
+}
+
+.circle6:hover~.hint-6 {
+    opacity: 0.85;
+
+}
+
+.swiper {
+    display: none !important;
+}
+
+.right-content {}
+
+.delivery {
+    display: flex;
+    align-items: center;
+    background: #F5F7F9;
+    margin-top: 27px;
+}
+
+.order-sketch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    padding: 18px 79px;
+    background: #FFDA00;
+}
+
+.order-sketch h2 {
+    font-family: 'AvenirNextCyr-Demi';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #414140;
+}
+
+.delivery h2 {
+    padding: 13px 37px 14px 19px;
+
+    font-family: 'AvenirNextCyr-Bold';
+    font-size: 14px;
+    line-height: 150%;
+    color: #414140;
+}
+
+.delivery h2 span {
+    font-family: 'AvenirNextCyr-Light';
+}
+
+.order-table {
+    margin-top: 24px;
+    border: 1px solid rgba(65, 65, 64, 0.1);
+
+}
+
+
+.even {
+    background: #F5F7F9;
+}
+
+.row-order-table {
+    display: grid;
+    grid-template-columns: 21px 147px 93px 56px;
+    gap: 8px;
+    padding: 13px 11px;
+}
+
+.row-order-table h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 8px; */
+    height: 21px;
+    width: 21px;
+    background-color: #FFDA00;
+    border-radius: 50%;
+}
+
+.row-order-table h4 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #414140;
+}
+
+.row-order-table h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #414140;
+}
+
+
+/* Счетчики */
+
+.counter {
+    display: flex;
+    margin-left: 14px;
+    align-items: center;
+}
+
+.i-count {
+
+    width: 25px;
+    height: 22px;
+    border: 1px solid rgba(65, 65, 64, 0.1);
+    border-radius: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #414140;
+    opacity: 0.6;
+}
+
+
+.buttons-counter {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.buttons-counter button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(65, 65, 64, 0.1);
+    border-radius: 0;
+    width: 19px;
+    height: 12px;
+}
+
+/*  */
+#price-for-1example {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: right;
+    color: #414140;
+    opacity: 0.6;
+}
+
+.price-set {
+    display: flex;
+    gap: 35px;
+}
+
+.price-set-l h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #414140;
+}
+
+.price-set-l h2 {
+    font-family: 'AvenirNextCyr-Demi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: #414140;
+}
+
+.price-set-r {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.price-set-r a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #414140;
+    opacity: 0.6;
+    text-underline-offset: 3px;
+}
+
+.send-request {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 24px;
+    padding: 18px 115px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 20px;
+    color: #414140;
+    background: #FFDA00;
+}
+
+.question-call {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.quest-c {
+    display: flex;
+    gap: 8px;
+}
+
+.quest-c h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #414140;
+}
+
+.question-call a {
+    margin-top: 4px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-decoration-line: underline;
+    text-underline-offset: 5px;
+    color: #414140;
+}
+
+@media (max-width:1550px) {
+    .link-menu {
+        margin-left: 0;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .circle1 {
+        left: calc(209px);
+
+    }
+
+    .circle2 {
+        left: 510px;
+    }
+
+    .circle3 {
+        left: 250px;
+    }
+
+    .circle4 {
+        left: 110px;
+    }
+
+    .circle5 {
+        left: 132px;
+    }
+
+    .circle6 {
+        left: 662px;
+    }
+
+    .hint {
+        z-index: 10;
+    }
+
+    .hint-1 {
+        left: 209px;
+    }
+
+    .hint-2 {
+        left: 510px;
+    }
+
+    .hint-3 {
+        left: 250px;
+    }
+
+    .hint-4 {
+        left: 110px;
+    }
+
+    .hint-5 {
+        left: 132px;
+    }
+
+    .hint-6 {
+        left: 662px;
+    }
+
+}
+
+* {
+    border: 1px solid red;
+}
+
+@media (max-width:1190px) {
+    /* .content {
+        display: block;
+    } */
+
+    .delivery h2 {
+        padding: 13px 0 13px 19px;
+    }
+
+    .order-sketch {
+        padding: 18px 60px;
+    }
+
+    .send-request {
+        padding: 18px 100px;
+    }
+    .left-content img{
+    max-width: 700px;
+    }
+}
+
+@media (max-width:767px) {
+
+    .left-content {
+        max-width: 750px;
+    }
+
+    .no-mob {
+        display: none;
+    }
+
+    .swiper {
+        display: block !important;
+    }
+
+    .hint {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content {
+        justify-content: center;
+    }
+
+    .circle1 {
+        top: 47%;
+        left: 27%;
+    }
+
+    .circle2 {
+        top: 52%;
+        left: 65%;
+    }
+
+    .circle3 {
+        top: 32%;
+        left: 32%;
+    }
+
+    .circle4 {
+        top: 1%;
+        left: 14%;
+    }
+
+    .circle5 {
+        top: 27%;
+        left: 17%;
+    }
+
+    .circle6 {
+        top: 37%;
+        left: 87%;
+    }
+
+}
