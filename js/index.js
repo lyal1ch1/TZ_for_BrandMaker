@@ -22,7 +22,7 @@ const swiper = new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-   
+
 
     // ! Автоматическое перелистывание
     // autoplay: {
@@ -32,21 +32,32 @@ const swiper = new Swiper('.swiper', {
 
 
 
-var elements = document.querySelectorAll('.circle')
-console.log(elements);
+var elements = document.querySelectorAll('.circle');
+var hints = document.querySelectorAll('.hint');
+// console.log(elements);
 var currentSlide = swiper.realIndex + 1;
 
 swiper.on('slideChange', function () {
     currentSlide = swiper.realIndex + 1;
     console.log('Текущий слайд: ' + currentSlide);
-   for (let i = 0; i < elements.length; i++) {
-    if (currentSlide !== 1 ) {
-        elements[i].classList.add('hidden')
-        console.log(elements);
-    }
-    if (currentSlide == 1) {
+    for (let i = 0; i < elements.length; i++) {
+        if (currentSlide !== 1) {
+            elements[i].classList.add('hidden')
+            console.log(elements);
+        }
+        if (currentSlide == 1) {
             elements[i].classList.remove('hidden');
+        }
+
     }
-    
-   }
-  });
+    for (let i = 0; i < hints.length; i++) {
+        if (currentSlide !== 1) {
+            hints[i].classList.add('hidden')
+            console.log(elements);
+        }
+        if (currentSlide == 1) {
+            hints[i].classList.remove('hidden');
+        }
+
+    }
+});

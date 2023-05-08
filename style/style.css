@@ -71,6 +71,10 @@ nav::-webkit-scrollbar {
     display: none !important;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+}
 
 
 .circle {
@@ -285,6 +289,7 @@ nav::-webkit-scrollbar {
     grid-template-columns: 21px 147px 93px 56px;
     gap: 8px;
     padding: 13px 11px;
+
 }
 
 .row-order-table h6 {
@@ -365,6 +370,7 @@ nav::-webkit-scrollbar {
 .price-set {
     display: flex;
     gap: 35px;
+    justify-content: space-around;
 }
 
 
@@ -465,6 +471,10 @@ nav::-webkit-scrollbar {
 }
 
 @media (max-width:1550px) {
+    nav {
+        padding-left: 20px;
+    }
+
     .link-menu {
         margin-left: 0;
     }
@@ -528,9 +538,9 @@ nav::-webkit-scrollbar {
 
 }
 
-/* * {
-    border: 1px solid red;
-} */
+* {
+    /* border: 1px solid red; */
+}
 
 @media (max-width:1190px) {
     /* .content {
@@ -592,12 +602,55 @@ nav::-webkit-scrollbar {
     }
 
     .hint {
-        display: none;
+        /* display: none; */
     }
 
+    .hint-1 {
+        top: 58%;
+        left: 10%;
+        z-index: 15;
+        padding: 5px;
+    }
 
+    .hint-2 {
+        top: 58%;
+        left: 45%;
+        z-index: 15;
+        padding: 5px;
+    }
 
+    .hint-3 {
+        top: 19%;
+        left: 42%;
+        z-index: 15;
+        padding: 5px;
+    }
 
+    .hint-4 {
+        top: 4%;
+        left: 20%;
+        z-index: 15;
+        padding: 5px;
+    }
+
+    .hint-5 {
+        top: 3%;
+        left: 20%;
+        z-index: 15;
+        padding: 5px;
+    }
+
+    .hint-6 {
+        top: 7%;
+        left: 61%;
+        z-index: 15;
+        padding: 5px;
+    }
+
+    /* .cir-opacity-1 {
+        position: absolute;
+        top 10%
+    } */
 
     .circle1 {
         top: 47%;
@@ -629,4 +682,57 @@ nav::-webkit-scrollbar {
         left: 87%;
     }
 
+    .right-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row-order-table {
+        justify-content: center;
+    }
+
+    .price-set {
+        align-items: center;
+    }
+}
+
+@media (max-width:345px) {
+    .delivery h2 {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    .delivery h2 span {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+    }
+
+    .delivery img {
+        max-width: 40px;
+    }
+}
+
+@media (max-width:341px) {
+    .order-sketch {
+        padding: 18px 45px;
+    }
+
+    .row-order-table {
+        grid-template-columns: 20px 140px 93px 53px;
+        gap: 3px;
+        padding: 13px 0;
+        align-items: center;
+    }
+
+    .counter {
+        margin-left: 0;
+        max-width: 36px;
+    }
+
+    .send-request {
+        padding: 18px 80px;
+    }
 }

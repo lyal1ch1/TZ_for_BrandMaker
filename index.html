@@ -50,7 +50,7 @@
                 <div class="hint hint-6">Кресло посетителя <br> <span>От 13 500 руб</span></div>
             </div>
             <div class="hidden"></div>
-            <div class="visible"></div>
+            <div class="center"></div>
 
             <div class="swiper">
                 <div class="swiper-wrapper">
@@ -63,7 +63,7 @@
                 <div class="swiper-pagination"></div>
                 <div class="circle circle1">1</div>
                 <div class="hint hint-1">Cтол руководителя <br> <span>От 27 900 руб</span></div>
-
+                <!-- <div class="circle cir-opacity-1"></div> -->
                 <div class="circle circle2">2</div>
                 <div class="hint hint-2">Брифинг-приставка <br> <span>От 14 600 руб</span></div>
                 <div class="circle circle3">3</div>
@@ -92,11 +92,11 @@
                     <h4>Стол руководителя</h4>
                     <h3>от 27 900 руб</h3>
                     <div class="counter">
-                        <input class="i-count" type="number" min="0" value="1" readonly>
+                        <input class="i-count i-c1" type="number" min="0" value="1" readonly>
 
                         <div class="buttons-counter">
                             <button type="button"
-                                onclick="this.parentNode.previousElementSibling.stepDown(); this.parentNode.previousElementSibling.onchange();">
+                                onclick="this.parentNode.previousElementSibling.stepDown(); myClick1(); mySum();">
                                 <svg width="7" height="4" viewBox="0 0 7 4" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 1L3.5 3.5L1 1" stroke="#414140" stroke-linecap="round"
@@ -104,7 +104,7 @@
                                 </svg>
                             </button>
                             <button type="button"
-                                onclick="this.parentNode.previousElementSibling.stepUp(); this.parentNode.previousElementSibling.onchange();">
+                                onclick="this.parentNode.previousElementSibling.stepUp(); myClick1(); mySum();">
                                 <svg width="7" height="4" viewBox="0 0 7 4" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 3.5L3.5 1L1 3.5" stroke="#414140" stroke-linecap="round"
@@ -122,11 +122,11 @@
                     <h4>Брифинг-приставка</h4>
                     <h3>от 14 600 руб</h3>
                     <div class="counter">
-                        <input class="i-count" type="number" min="0" value="1" readonly>
+                        <input class="i-count i-c2" type="number" min="0" value="1" readonly>
 
                         <div class="buttons-counter">
                             <button type="button"
-                                onclick="this.parentNode.previousElementSibling.stepDown(); this.parentNode.previousElementSibling.onchange();">
+                                onclick="this.parentNode.previousElementSibling.stepDown(); myClick2(); mySum();">
                                 <svg width="7" height="4" viewBox="0 0 7 4" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 1L3.5 3.5L1 1" stroke="#414140" stroke-linecap="round"
@@ -134,7 +134,7 @@
                                 </svg>
                             </button>
                             <button type="button"
-                                onclick="this.parentNode.previousElementSibling.stepUp(); this.parentNode.previousElementSibling.onchange();">
+                                onclick="this.parentNode.previousElementSibling.stepUp(); myClick2(); mySum();">
                                 <svg width="7" height="4" viewBox="0 0 7 4" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 3.5L3.5 1L1 3.5" stroke="#414140" stroke-linecap="round"
@@ -152,11 +152,11 @@
                     <h4>Тумба с ящиками</h4>
                     <h3>от 10 500 руб</h3>
                     <div class="counter">
-                        <input class="i-count" type="number" min="0" value="1" readonly>
+                        <input class="i-count i-c3" type="number" min="0" value="1" readonly>
 
                         <div class="buttons-counter">
                             <button type="button"
-                                onclick="this.parentNode.previousElementSibling.stepDown(); this.parentNode.previousElementSibling.onchange();">
+                                onclick="this.parentNode.previousElementSibling.stepDown(); myClick3(); mySum();">
                                 <svg width="7" height="4" viewBox="0 0 7 4" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 1L3.5 3.5L1 1" stroke="#414140" stroke-linecap="round"
@@ -164,7 +164,7 @@
                                 </svg>
                             </button>
                             <button type="button"
-                                onclick="this.parentNode.previousElementSibling.stepUp(); this.parentNode.previousElementSibling.onchange();">
+                                onclick="this.parentNode.previousElementSibling.stepUp(); myClick3(); mySum();">
                                 <svg width="7" height="4" viewBox="0 0 7 4" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 3.5L3.5 1L1 3.5" stroke="#414140" stroke-linecap="round"
@@ -182,11 +182,11 @@
                     <h4>Шкаф для одежды</h4>
                     <h3>от 55 000 руб</h3>
                     <div class="counter">
-                        <input class="i-count" type="number" min="0" value="1" readonly>
+                        <input class="i-count i-c4" type="number" min="0" value="1" readonly>
 
                         <div class="buttons-counter">
                             <button type="button"
-                                onclick="this.parentNode.previousElementSibling.stepDown(); this.parentNode.previousElementSibling.onchange();">
+                                onclick="this.parentNode.previousElementSibling.stepDown(); myClick4(); mySum();">
                                 <svg width="7" height="4" viewBox="0 0 7 4" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 1L3.5 3.5L1 1" stroke="#414140" stroke-linecap="round"
@@ -194,7 +194,7 @@
                                 </svg>
                             </button>
                             <button type="button"
-                                onclick="this.parentNode.previousElementSibling.stepUp(); this.parentNode.previousElementSibling.onchange();">
+                                onclick="this.parentNode.previousElementSibling.stepUp(); myClick4(); mySum();">
                                 <svg width="7" height="4" viewBox="0 0 7 4" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 3.5L3.5 1L1 3.5" stroke="#414140" stroke-linecap="round"
@@ -212,11 +212,11 @@
                     <h4>Кресло руководителя</h4>
                     <h3>от 43 800 руб</h3>
                     <div class="counter">
-                        <input class="i-count" type="number" min="0" value="1" readonly>
+                        <input class="i-count i-c5" type="number" min="0" value="1" readonly>
 
                         <div class="buttons-counter">
                             <button type="button"
-                                onclick="this.parentNode.previousElementSibling.stepDown(); this.parentNode.previousElementSibling.onchange();">
+                                onclick="this.parentNode.previousElementSibling.stepDown(); myClick5(); mySum();">
                                 <svg width="7" height="4" viewBox="0 0 7 4" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 1L3.5 3.5L1 1" stroke="#414140" stroke-linecap="round"
@@ -224,7 +224,7 @@
                                 </svg>
                             </button>
                             <button type="button"
-                                onclick="this.parentNode.previousElementSibling.stepUp(); this.parentNode.previousElementSibling.onchange();">
+                                onclick="this.parentNode.previousElementSibling.stepUp(); myClick5(); mySum();">
                                 <svg width="7" height="4" viewBox="0 0 7 4" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 3.5L3.5 1L1 3.5" stroke="#414140" stroke-linecap="round"
@@ -242,27 +242,22 @@
                     <h4>Кресло посетителя</h4>
                     <h3>от 13 500 руб</h3>
                     <div class="counter">
-                        <!-- <input class="i-count" type="number" min="0" value="1" > -->
-                        <input class="i-count"  type="number" onchange="myFunction()" value="0">
+                        <!-- <input class="i-count" type="number"  > -->
+                        <input class="i-count i-c6" min="0" value="1" type="number" onchange="myFunction()" value="0"
+                            readonly>
 
                         <div class="buttons-counter">
-                            <!-- <button type="button"
-                                onclick="this.parentNode.previousElementSibling.stepDown(); this.parentNode.previousElementSibling.onchange();">
+                            <button type="button"
+                                onclick="this.parentNode.previousElementSibling.stepDown(); myClick6(); mySum();">
                                 <svg width="7" height="4" viewBox="0 0 7 4" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 1L3.5 3.5L1 1" stroke="#414140" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>
-                            </button> -->
-                            
-                            <button type="button" onclick="this.parentNode.previousElementSibling.stepDown(); myClickV2();">
-                              <svg width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 1L3.5 3.5L1 1" stroke="#414140" stroke-linecap="round" stroke-linejoin="round" />
-                              </svg>
                             </button>
 
                             <button type="button"
-                                onclick="this.parentNode.previousElementSibling.stepUp(); this.parentNode.previousElementSibling.onchange();">
+                                onclick="this.parentNode.previousElementSibling.stepUp(); myClick6(); mySum();">
                                 <svg width="7" height="4" viewBox="0 0 7 4" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 3.5L3.5 1L1 3.5" stroke="#414140" stroke-linecap="round"
@@ -281,13 +276,13 @@
             <div class="price-set">
                 <div class="price-set-l">
                     <h4>Цена за комплект от</h4>
-                    <!-- <h2>1 258 400 руб</h2> -->
+                    <h2 class="test" id="test">1 258 400</h2>
                 </div>
-                <div style="display: none;" class="price-set-r">
+                <div class="price-set-r test">
                     <a href="#">Уведомить, если цена <br> будет снижена</a>
                 </div>
 
-                <div class="null-sum">
+                <div class="null-sum hidden">
                     <p>Чтобы увидеть цену, выберите нужные позиции в таблице</p>
                     <img src="img/icons/null-sum-icon.svg" alt="">
                 </div>
