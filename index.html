@@ -15,12 +15,22 @@
 
 <body>
     <nav class="link-menu">
-        <a href="#">Главная</a>
-        <p>&#8250</p>
-        <a href="#">Кабинеты руководителей</a>
-        <p>&#8250</p>
-        <a class="current-link" href="#"><span>Кабинет для руководителя GAMMA DIRECT</span></a>
+        <ul>
+            <li><a href="#">Главная </a> </li>
+            <li>
+                <p>&#8250</p>
+            </li>
+
+            <li><a class="current-link" href="#">Кабинеты руководителей </a> </li>
+            <li>
+                <p>&#8250</p>
+            </li>
+            <li><a href="#">Кабинет для руководителя GAMMA DIRECT </a> </li>
+
+        </ul>
     </nav>
+
+
     <div class="content">
         <div class="left-content">
             <div class="no-mob">
@@ -45,9 +55,9 @@
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="./img/photo-1.png"></div>
-                    <div class="swiper-slide"><img src="./img/mob-img/photo-1.png"></div>
-                    <div class="swiper-slide"><img src="./img/mob-img/photo-1.png"></div>
-                    <div class="swiper-slide"><img src="./img/mob-img/photo-1.png"></div>
+                    <div class="swiper-slide"><img src="./img/photo-2.png"></div>
+                    <div class="swiper-slide"><img src="./img/photo-3.png"></div>
+                    <div class="swiper-slide"><img src="./img/photo-4.png"></div>
 
                 </div>
                 <div class="swiper-pagination"></div>
@@ -69,7 +79,8 @@
         <div class="right-content">
             <h1>GAMMA DIRECT</h1>
             <div class="delivery">
-                <img src="img/icons/icon.svg" alt="icon_delivery">
+                <img class="no-mob" src="img/icons/icon.svg" alt="icon_delivery">
+                <img class="mob" src="img/icons/shop-car.svg" alt="">
                 <h2>Доставка и монтаж <span>Завтра после 12:00</span></h2>
             </div>
             <div class="order-sketch">
@@ -231,17 +242,25 @@
                     <h4>Кресло посетителя</h4>
                     <h3>от 13 500 руб</h3>
                     <div class="counter">
-                        <input class="i-count" type="number" min="0" value="1" readonly>
+                        <!-- <input class="i-count" type="number" min="0" value="1" > -->
+                        <input class="i-count"  type="number" onchange="myFunction()" value="0">
 
                         <div class="buttons-counter">
-                            <button type="button"
+                            <!-- <button type="button"
                                 onclick="this.parentNode.previousElementSibling.stepDown(); this.parentNode.previousElementSibling.onchange();">
                                 <svg width="7" height="4" viewBox="0 0 7 4" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 1L3.5 3.5L1 1" stroke="#414140" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>
+                            </button> -->
+                            
+                            <button type="button" onclick="this.parentNode.previousElementSibling.stepDown(); myClickV2();">
+                              <svg width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 1L3.5 3.5L1 1" stroke="#414140" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
                             </button>
+
                             <button type="button"
                                 onclick="this.parentNode.previousElementSibling.stepUp(); this.parentNode.previousElementSibling.onchange();">
                                 <svg width="7" height="4" viewBox="0 0 7 4" fill="none"
@@ -262,10 +281,15 @@
             <div class="price-set">
                 <div class="price-set-l">
                     <h4>Цена за комплект от</h4>
-                    <h2>1 258 400 руб</h2>
+                    <!-- <h2>1 258 400 руб</h2> -->
                 </div>
-                <div class="price-set-r">
+                <div style="display: none;" class="price-set-r">
                     <a href="#">Уведомить, если цена <br> будет снижена</a>
+                </div>
+
+                <div class="null-sum">
+                    <p>Чтобы увидеть цену, выберите нужные позиции в таблице</p>
+                    <img src="img/icons/null-sum-icon.svg" alt="">
                 </div>
             </div>
             <div class="send-request">
@@ -284,6 +308,7 @@
     </div>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/table-script.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,4 @@
-// "use strict"
-//==========================================
 
-//! ============== 1 вариант SWIPER ==============
 const swiper = new Swiper('.swiper', {
 
     //! Основные настройки 
@@ -33,16 +30,11 @@ const swiper = new Swiper('.swiper', {
     // },
 });
 
-// swiper.on('slideChange', function () {
-//     console.log('slide changed');
-//     console.log(swiper.activeIndex);
-//   });
+
 
 var elements = document.querySelectorAll('.circle')
-// var hidden = document.querySelectorAll('.hidden')
 console.log(elements);
 var currentSlide = swiper.realIndex + 1;
-// console.log('Текущий слайд: ' + currentSlide);
 
 swiper.on('slideChange', function () {
     currentSlide = swiper.realIndex + 1;
@@ -58,25 +50,3 @@ swiper.on('slideChange', function () {
     
    }
   });
-//! ============== 2 вариант SWIPER ==============
-
-// var mySwiper = new Swiper('.swiper-container', {
-//     // настройки Swiper
-//   });
-  
-//   // получаем номер текущего слайда при загрузке страницы
-//   var currentSlide = mySwiper.activeIndex + 1;
-//   console.log('Текущий слайд: ' + currentSlide);
-  
-//   // получаем номер текущего слайда при изменении слайдов
-//   mySwiper.on('slideChange', function () {
-//     currentSlide = mySwiper.activeIndex + 1;
-//     console.log('Текущий слайд: ' + currentSlide);
-//   });
-// const swiper = new Swiper('.swiper', {
-//     // ...
-//   });
-//   swiper.on('slideChange', function () {
-//     console.log('slide changed');
-//     console.log(swiper.activeIndex);
-//   });

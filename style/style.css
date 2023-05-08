@@ -12,6 +12,24 @@ body {
 
 }
 
+nav {
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+ul {
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+}
+
+
+nav::-webkit-scrollbar {
+    display: none;
+}
+
 .link-menu {
     margin-top: 32px;
     /* margin-left: 375px; */
@@ -27,10 +45,11 @@ body {
     font-size: 14px;
     line-height: 150%;
     color: #414140;
+    text-decoration: none;
 }
 
 .current-link {
-    text-decoration: none;
+    text-decoration: underline !important;
 
 }
 
@@ -216,6 +235,10 @@ body {
     margin-top: 27px;
 }
 
+.mob {
+    display: none;
+}
+
 .order-sketch {
     display: flex;
     justify-content: center;
@@ -344,6 +367,8 @@ body {
     gap: 35px;
 }
 
+
+
 .price-set-l h4 {
     font-style: normal;
     font-weight: 400;
@@ -374,6 +399,27 @@ body {
     color: #414140;
     opacity: 0.6;
     text-underline-offset: 3px;
+}
+
+.null-sum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 8px 11px 14px;
+    border: 1px solid rgba(252, 63, 29, 0.16);
+    background: rgba(252, 63, 29, 0.04);
+    max-width: 201px;
+}
+
+.null-sum p {
+    font-weight: 450;
+    font-size: 10px;
+    line-height: 130%;
+}
+
+.null-sum img {
+    width: 24px;
+    height: 24px;
 }
 
 .send-request {
@@ -482,9 +528,9 @@ body {
 
 }
 
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 
 @media (max-width:1190px) {
     /* .content {
@@ -502,19 +548,43 @@ body {
     .send-request {
         padding: 18px 100px;
     }
-    .left-content img{
-    max-width: 700px;
+
+    .left-content img {
+        max-width: 700px;
     }
 }
 
 @media (max-width:767px) {
+    .link-menu {
+        margin-top: 16px;
+    }
+
+    .content {
+        margin-top: 16px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+    }
 
     .left-content {
         max-width: 750px;
     }
 
+    .delivery {
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .mob {
+        display: block;
+    }
+
     .no-mob {
         display: none;
+    }
+
+    .order-sketch {
+        margin-top: 18px;
     }
 
     .swiper {
@@ -525,13 +595,9 @@ body {
         display: none;
     }
 
-    .content {
-        flex-direction: column;
-    }
 
-    .content {
-        justify-content: center;
-    }
+
+
 
     .circle1 {
         top: 47%;
