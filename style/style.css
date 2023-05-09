@@ -171,7 +171,7 @@ nav::-webkit-scrollbar {
 
 .hint-3 {
     position: absolute;
-    top: 248px;
+    top: 158px;
     left: calc(60% - 770px + 250px);
 }
 
@@ -191,7 +191,7 @@ nav::-webkit-scrollbar {
 .hint-6 {
     position: absolute;
     top: 291px;
-    left: calc(60% - 770px + 662px);
+    left: calc(60% - 770px + 602px);
 }
 
 
