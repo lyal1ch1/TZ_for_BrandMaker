@@ -136,7 +136,7 @@ nav::-webkit-scrollbar {
 .hint {
     background: #414140;
     padding: 12px 23px 14px 16px;
-    font-family: 'Avenir Next';
+    /* font-family: 'Avenir Next'; */
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -597,7 +597,9 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-@media (max-width:767px) {
+
+
+@media (max-width:768px) {
     .link-menu {
         margin-top: 16px;
     }
@@ -608,6 +610,7 @@ input[type=number]::-webkit-outer-spin-button {
         flex-direction: column;
         justify-content: center;
         gap: 24px;
+
     }
 
     .left-content {
@@ -633,6 +636,7 @@ input[type=number]::-webkit-outer-spin-button {
 
     .swiper {
         display: block !important;
+        width: 100vw !important;
     }
 
     .hint {
@@ -646,21 +650,21 @@ input[type=number]::-webkit-outer-spin-button {
 
     .hint-1 {
         top: 58%;
-        left: 10%;
+        left: 17%;
         z-index: 15;
         padding: 5px;
     }
 
     .hint-2 {
-        top: 58%;
-        left: 45%;
+        top: 63%;
+        left: 56%;
         z-index: 15;
         padding: 5px;
     }
 
     .hint-3 {
         top: 19%;
-        left: 42%;
+        left: 38%;
         z-index: 15;
         padding: 5px;
     }
@@ -673,7 +677,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
     .hint-5 {
-        top: 3%;
+        top: 9%;
         left: 20%;
         z-index: 15;
         padding: 5px;
@@ -733,6 +737,20 @@ input[type=number]::-webkit-outer-spin-button {
 
     .price-set {
         align-items: center;
+    }
+}
+
+@media (min-width:478px) {
+    .hint-3 {
+        left: 34%;
+    }
+
+    .hint-5 {
+        top: 19%;
+    }
+
+    .hint-6 {
+        top: 22%;
     }
 }
 
