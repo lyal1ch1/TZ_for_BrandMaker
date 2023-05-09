@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <link rel="stylesheet" href="style/swiper-bundle.min.css">
     <title>HW_BrandMaker</title>
 </head>
@@ -288,8 +289,27 @@
                     <img src="img/icons/null-sum-icon.svg" alt="">
                 </div>
             </div>
-            <div class="send-request">
-                <h2>Отправить заявку</h2>
+            <div class="send-request ">
+
+                <a style="text-decoration: none;" data-fancybox data-src="#modal" href="javascript:;" class="btn">
+                    <h2>Отправить заявку</h2>
+                </a>
+
+                <div class="popup" id="modal" style="display: none;">
+                    <h2>Мы перезвоним Вам</h2>
+                    <p>и поможем определиться с комплектацией, размерами и цветом мебели. А так же бесплатно составим
+                        эскизный
+                        проект и рассчитаем точную стоимость и сроки.</p>
+                    <div class="phone">
+                        <img src="img/icons/Group.svg" alt="rus">
+                        <h5>+7</h5>
+                        <input class="tel-inp" type="number" id="phone" name="phone" placeholder="(999) 999-99-99"
+                            required maxlength="10">
+                    </div>
+                    <div class="send-request sec-send-request">
+                        <h2>Отправить заявку</h2>
+                    </div>
+                </div>
             </div>
             <div class="question-call">
                 <div class="quest-c">
@@ -300,12 +320,15 @@
                 <a href="tel:+79385000541">+7 (938) 5000-541</a>
             </div>
         </div>
-
     </div>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
     <script src="./js/table-script.js"></script>
     <script src="./js/hints.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="./js/tel.js">
+    </script>
 </body>
 
 </html>
