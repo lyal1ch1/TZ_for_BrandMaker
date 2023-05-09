@@ -475,6 +475,24 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
+/* .link-pers-info {
+    display: flex;
+    flex-direction: column;
+} */
+
+.popup h3 {
+    margin-top: 16px;
+    font-family: 'AvenirNextCyr-UltraLight';
+    font-size: 13px;
+    color: #414140;
+
+}
+
+.popup a {
+    text-underline-offset: 4px;
+    color: #414140;
+}
+
 .question-call {
     display: flex;
     flex-direction: column;
