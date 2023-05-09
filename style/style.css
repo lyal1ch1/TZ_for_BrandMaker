@@ -71,6 +71,8 @@ nav::-webkit-scrollbar {
     display: none !important;
 }
 
+
+
 .center {
     display: flex;
     justify-content: center;
@@ -144,6 +146,10 @@ nav::-webkit-scrollbar {
     color: #F5F7F9;
 }
 
+.visible {
+    opacity: 0.85;
+}
+
 .hint span {
     font-weight: 750;
     color: #FFDA00;
@@ -196,12 +202,12 @@ nav::-webkit-scrollbar {
     background-color: #c7b600;
 }
 
-.circle1:hover~.hint-1 {
+/* .circle1:hover~.hint-1 {
     opacity: 0.85;
 
-}
+} */
 
-.circle2:hover~.hint-2 {
+/* .circle2:hover~.hint-2 {
     opacity: 0.85;
 
 }
@@ -224,7 +230,7 @@ nav::-webkit-scrollbar {
 .circle6:hover~.hint-6 {
     opacity: 0.85;
 
-}
+} */
 
 .swiper {
     display: none !important;
@@ -560,7 +566,7 @@ nav::-webkit-scrollbar {
     }
 
     .left-content img {
-        max-width: 700px;
+        /* max-width: 700px; */
     }
 }
 
@@ -642,7 +648,7 @@ nav::-webkit-scrollbar {
 
     .hint-6 {
         top: 7%;
-        left: 61%;
+        left: 67%;
         z-index: 15;
         padding: 5px;
     }
